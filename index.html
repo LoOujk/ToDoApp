@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style_non.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
+  <title>ToDoList</title>
+</head>
+<body>
+    <header>
+        <div id=''>
+            <img src  = "img/logo.png" alt = "Senla Logo">         
+        </div>
+        <div>
+            <form >
+                <input type="search" class="search" placeholder="  Search task for to do" >     
+                <!-- <button type="submit" class="search_button" > <img src  = "img/search_icon.png" alt = "Senla Logo"> </button>     -->
+           </form>
+        </div>
+    </header>
+    <div class="withoutHeader">
+        <div class="tab">
+            <button class="tablinks" id = "allButton" onclick="displayTodos()">All</button>
+            <button class="tablinks" id= "actButton" onclick="displayActive()">Active</button>
+            <button class="tablinks" id = "doneButton" onclick="displayDone()">Done</button>
+        </div>
+        <form>
+            <!-- <label for="NewTask">New Task</label> -->
+            <p>New Task</p>
+            <div class="newTaskPlace">
+                <input name="NewTask" class='NewTask' input type="text" >
+                <button class="addButton" type="button">Add</button>
+            </div>
+           
+        </form>
+        <ul class="list">
+            
+        </ul>
+    </div>
+</body>
+</html>
